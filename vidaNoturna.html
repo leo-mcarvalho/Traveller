@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  <title>Vida Noturna</title>
+</head>
+
+<body class="content-vida-noturna text-white">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark mb-5">
+      <!--  Show this only on mobile to medium screens  -->
+      <a class="navbar-brand d-lg-none logo fs-1 ms-3" href="./index.html">Travellers</a>
+
+      <button class="navbar-toggler me-3" data-bs-toggle="collapse" data-bs-target="#navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!--  Use flexbox utility classes to change how the child elements are justified  -->
+      <div class="collapse navbar-collapse justify-content-between" id="navbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link ms-3 text-white" href="./sobre.html">Sobre</a>
+          </li>
+        </ul>
+
+        <!--   Show this only lg screens and up   -->
+        <a class="navbar-brand d-none d-lg-block logo fs-1" href="./index.html">Travellers</a>
+
+        <ul class="navbar-nav">
+          <li class="nav-item me-3">
+            <div class="dropdown">
+              <button class="text-white btn  bd-highlight botao dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Menu
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="./cadastro.html">Cadastro</a></li>
+                <li><a class="dropdown-item" href="./informacoespessoais.html">Informações
+                    Pessoais</a>
+                </li>
+                <li><a class="dropdown-item" href="./conquistas.html">Conquistas</a></li>
+                <li><a class="dropdown-item" href="./historicodeescolhas.html">Histórico de
+                    Escolhas</a>
+                </li>
+                <li><a class="dropdown-item" href="./meuperfil.html">Meu perfil</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="cover">
+      <div class="container">
+        <div class="row"></div>
+        <div class="row m-5"></div>
+        <section class="m-5 row">
+          <div class="col">
+            <div class="d-flex ms-5">
+              <div class="travessao mt-2 ms-4"></div>
+              <h3 class="subtitulo ms-4">Seu guia de Viagens</h3>
+            </div>
+            <h1 class="titulo display-1 text-white text-center mb-5">Você irá Descobrir o Melhor da Noite
+              Paulistana!
+            </h1>
+          </div>
+        </section>
+      </div>
+      <div class="mt-5">
+        <img class="d-flex m-5" src="./img/icons/facebook.svg" alt="logo do facebook">
+        <img class="d-flex m-5" src="./img/icons/insta.svg" alt="logo do instagram">
+        <img class="d-flex m-5" src="./img/icons/twitter.svg" alt="logo do twitter">
+      </div>
+    </div>
+    <main>
+      <section>
+        <div class="card bg-transparent text-white">
+          <img class="img-fluid" src="./img/VidaNoturna/skybar.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <h1 class="card-title display-1 text-center">Skye</h1>
+          </div>
+          <div class="card-img-bottom">
+            <p class="card-title fs-3 text-center">The nice thing about beginning hiking is that you don’t really need
+              any
+              special gear, you can probably get away with things you already have.</p>
+          </div>
+        </div>
+        <h3>Hiking Essentials</h3>
+      </section>
+    </main>
+</body>
+
+</html>
