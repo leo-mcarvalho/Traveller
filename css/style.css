@@ -65,3 +65,23 @@ body {
     background-repeat: no-repeat;
     width: auto;
 }
+
+.white {
+    background-color: #ffffff;
+}
+
+.cards {
+    width: 70%;
+    margin: 0 15% 0 15%;
+}
+
+
+/*vida-noturna*/
+.content-sobre {
+    background-image: url(../img/sobre/back.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+}
