@@ -14,6 +14,10 @@ body {
     width: auto;
 }
 
+.conteudo {
+    height: 100vh;
+}
+
 .logo {
     font-family: 'Julius Sans One', sans-serif;
 
@@ -35,6 +39,11 @@ body {
     color: #FBD784;
     text-shadow: 9px 9px 19px rgba(0, 0, 0, 0.15);
     letter-spacing: 6px;
+}
+
+.estabelecimentos {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
 }
 
 .travessao {
@@ -79,9 +88,14 @@ body {
 /*vida-noturna*/
 .content-sobre {
     background-image: url(../img/sobre/back.jpg);
-    height: 100vh;
+    height: 100%;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-    width: auto;
+    background-attachment: fixed;
+}
+
+.star {
+    max-width: 3rem;
+    height: auto;
+    margin: 2px;
 }
