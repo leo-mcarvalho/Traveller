@@ -7,51 +7,44 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <title>Vida Noturna</title>
 </head>
 
 <body class="content-vida-noturna text-white">
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark mb-5">
-      <!--  Show this only on mobile to medium screens  -->
-      <a class="navbar-brand d-lg-none logo fs-1 ms-3" href="./index.html">Travellers</a>
-
-      <button class="navbar-toggler me-3" data-bs-toggle="collapse" data-bs-target="#navbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!--  Use flexbox utility classes to change how the child elements are justified  -->
-      <div class="collapse navbar-collapse justify-content-between" id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <div class="container-fluid justify-content-between">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link ms-3 text-white" href="./sobre.html">Sobre</a>
-          </li>
-        </ul>
-
-        <!--   Show this only lg screens and up   -->
-        <a class="navbar-brand d-none d-lg-block logo fs-1" href="./index.html">Travellers</a>
-
-        <ul class="navbar-nav">
-          <li class="nav-item me-3">
-            <div class="dropdown">
-              <button class="text-white btn  bd-highlight botao dropdown-toggle" type="button" id="dropdownMenuButton1"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                Menu
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="./cadastro.html">Cadastro</a></li>
-                <li><a class="dropdown-item" href="./informacoespessoais.html">Informações
-                    Pessoais</a>
-                </li>
-                <li><a class="dropdown-item" href="./conquistas.html">Conquistas</a></li>
-                <li><a class="dropdown-item" href="./historicodeescolhas.html">Histórico de
-                    Escolhas</a>
-                </li>
-                <li><a class="dropdown-item" href="./meuperfil.html">Meu perfil</a></li>
-              </ul>
+            <div class="menu-btn" onclick=lockScroll()>
+              <i class="fas fa-bars"></i>
+            </div>
+            <div class="side-bar">
+              <div class="close-btn" onclick=lockScroll()>
+                <i class="fas fa-times"></i>
+              </div>
+              <div class="menu">
+                <div class="item"><a href="./index.html"><i class="fas fa-home"></i>Home</a></div>
+                <div class="item"><a href="#"><i class="fas fa-map-marked-alt"></i>Como chegar</a></div>
+                <div class="item"><a href="#"><i class="far fa-lightbulb"></i>Dicas úteis</a></div>
+                <div class="item"><a href="#"><i class="fas fa-hotel"></i>Onde se hospedar</a></div>
+                <div class="item"><a href="#"><i class="fas fa-car"></i>Alugue seu carro</a></div>
+                <div class="item"><a href="#"><i class="fas fa-book"></i>História</a></div>
+                <div class="item"><a href="#"><i class="fas fa-archway"></i>Cultura</a></div>
+                <div class="item"><a href="#"><i class="fas fas fa-tree"></i>Parques</a></div>
+                <div class="item"><a href="./gastronomia.html"><i class="fas fa-utensils"></i>Gastronomia</a></div>
+                <div class="item"><a href="./vidaNoturna.html"><i class="fas fa-cocktail"></i>Vida Noturna</a></div>
+                <div class="item"><a href="#"><i class="fas fa-theater-masks"></i>Entretenimento</a></div>
+                <div class="item"><a href="./sobre.html"><i class="far fa-address-card"></i>Sobre</a></div>
+              </div>
             </div>
           </li>
         </ul>
+        <a class="navbar-brand logo fs-1 text-white" href="./index.html">Traveller</a>
+        <div class="" id="navbarSupportedContent">
+          <a class="nav-link me-3 text-white text-peq" href="./sobre.html">Sobre</a>
+        </div>
       </div>
     </nav>
   </header>
@@ -63,60 +56,310 @@
           <div class="row m-5"></div>
           <div class="m-5 row">
             <div class="col">
-              <div class="d-flex mb-2 shadow-sm">
+              <div class="d-flex mb-2">
                 <div class="travessao mt-2"></div>
                 <h3 class="subtitulo ms-4">Seu guia de Viagens</h3>
               </div>
-              <h1 class="titulo text-white mb-5">Você irá Descobrir o Melhor da Noite
-                Paulistana!
+              <h1 class="titulo text-white mb-5">Descubra os Melhores Sabores de São Paulo!
               </h1>
             </div>
           </div>
         </div>
-        <div class="mt-5">
-          <img class="d-flex m-5" src="./img/icons/facebook.svg" alt="logo do facebook">
-          <img class="d-flex m-5" src="./img/icons/insta.svg" alt="logo do instagram">
-          <img class="d-flex m-5" src="./img/icons/twitter.svg" alt="logo do twitter">
+        <div class="mt-5 social">
+          <a href="#"><img class="d-flex m-5" src="./img/icons/facebook.svg" alt="logo do facebook"></a>
+          <a href="#"><img class="d-flex m-5" src="./img/icons/insta.svg" alt="logo do instagram"></a>
+          <a href="#"><img class="d-flex m-5" src="./img/icons/twitter.svg" alt="logo do twitter"></a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="card bg-transparent text-white group-card reveal">
+        <a class="btn" data-bs-toggle="collapse" href="#collapseItalia" role="button" aria-expanded="false"
+          aria-controls="collapseExample">
+          <img class="img-fluid cards card-img" src="./img/VidaNoturna/skybar.jpg"
+            alt="Foto do restaurante Terraço Itália">
+          <div class="card-img-overlay position-relative text-center">
+            <h1 class="card-title position-absolute bottom-0 start-50 translate-middle-x estabelecimentos text-white">
+              Terraço
+              Itália</h1>
+          </div>
+        </a>
+        <div class="white">
+          <div class="card-img-bottom">
+            <p class="card-title fs-5 text-center text-dark legenda bg-white">Restaurante italiano sofisticado com
+              iluminação por velas, um piano e uma vista incrível para a cidade.</p>
+          </div>
+          <div class="collapse" id="collapseItalia">
+            <div class="container text-dark">
+              <div class="d-flex mt-5 text-center ps-3">
+                <div class="travessao mt-2 "></div>
+                <h3 class="subtitulo ms-3">Melhores Restaurantes</h3>
+              </div>
+              <h2 class="titulo-descricao display-3 ps-3">Alta Gastronomia Italiana</h2>
+              <p class="ps-3">Situado em um dos prédios mais icônicos e imponentes da cidade de São Paulo, o Terraço
+                Itália traz consigo um legado de história e tradição. Um protagonista na cena paulistana que surpreende
+                e encanta clientes e visitantes há mais de 50 anos. </p>
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <div>
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14630.55164992642!2d-46.6437389!3d-23.5455222!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3cd0a1d60820f9e2!2zVGVycmHDp28gSXTDoWxpYQ!5e0!3m2!1spt-BR!2sbr!4v1623190331445!5m2!1spt-BR!2sbr"
+                        allowfullscreen="" loading="lazy" class="img-fluid mapa mt-3"></iframe>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="info-rest">
+                      <div class="mt-2">
+                        <img src="./img/icons/clock.svg" alt="imagem de um relógio">
+                        <span>Horário de funcionamento: 12:00-20:00h</span>
+                      </div>
+                      <div>
+                        <img src="./img/icons/menu.svg" alt="imagem de um chapéu de chef de cozinha">
+                        <span>Cardápio: <a class="text-decoration-none text-dark"
+                            href="http://www.terracoitalia.com.br/assets/document/Informativo_Natal.pdf"
+                            target="_blank">Clique para ver
+                            o Menu</a>
+                        </span>
+                      </div>
+                      <div>
+                        <img src="./img/icons/telefone.svg" alt="imagem de um telefone">
+                        <span>Telefone: (11)2189-2929</span>
+                      </div>
+                      <div>
+                        <img src="./img/icons/pin.svg" alt="imagem de um pin de mapa">
+                        <span>Endereço: Av. Ipiranga, 344 - 41º andar - República, São Paulo - SP, 01046-010</span>
+                      </div>
+                      <div>
+                        <img src="./img/icons/distance.svg" alt="imagem de dois pins num mapa">
+                        <span>Distância com relação a Av. Paulista é de 3km</span>
+                      </div>
+                      <div>
+                        <img src="./img/icons/money.svg" alt="imagem de uma carteira">
+                        <span>Indicador de preço: $$$$</span>
+                      </div>
+                      <div>
+                        <img src="./img/icons/estacionamento.svg" alt="simbolo de um estacionamento">
+                        <span>Possui estacionamento no local?: Sim</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex ps-3 mt-5 justify-content-center">
+                <a class="text-decoration-none text-dark subtitulo" href="https://www.terracoitalia.com.br/"
+                  target="_blank">Site
+                  oficial</a>
+                <a href="https://www.terracoitalia.com.br/" target="_blank"><img class="img-fluid ms-2 mb-5 arrow"
+                    src="./img/arrow.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="m-5 text-center">
+            <span class="text-peq text-dark">2397 Avaliações</span>
+            <div class="d-flex justify-content-center mt-2">
+              <a class="btn" data-bs-toggle="modal" data-bs-target="#form">
+                <img class="img-fluid star" src="./img/estrela.png" alt="">
+                <img class="img-fluid star" src="./img/estrela.png" alt="">
+                <img class="img-fluid star" src="./img/estrela.png" alt="">
+                <img class="img-fluid star" src="./img/estrela.png" alt="">
+                <img class="img-fluid star" src="./img/estrela.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="card bg-transparent text-white group-card reveal">
+        <a class="btn" data-bs-toggle="collapse" href="#collapseFasano" role="button" aria-expanded="false"
+          aria-controls="collapseExample">
+          <img class="img-fluid cards card-img" src="./img/VidaNoturna/dedge.jpg" alt="...">
+          <div class="card-img-overlay position-relative text-center">
+            <h1 class="card-title position-absolute bottom-0 start-50 translate-middle-x estabelecimentos text-white">
+              Fasano</h1>
+          </div>
+        </a>
+        <div class="white">
+          <div class="card-img-bottom">
+            <p class="card-title fs-5 text-center text-dark legenda bg-white">O Restaurante Fasano traz aos seus
+              clientes sua alta gastronomia italiana e serviço impecáveis.</p>
+          </div>
+          <div class="collapse" id="collapseFasano">
+            <div class="container text-dark">
+              <div class="d-flex mt-5 text-center ps-3">
+                <div class="travessao mt-2 "></div>
+                <h3 class="subtitulo ms-3">Melhores Restaurantes</h3>
+              </div>
+              <h2 class="titulo-descricao display-3 ps-3">Alta Gastronomia Italiana</h2>
+              <p class="ps-3">o Restaurante Fasano é reconhecido por sua alta gastronomia italiana e serviço impecáveis,
+                onde a personalidade e excelência do restaurateur Gero Fasano se unem à cozinha comandada pelo Chef Luca
+                Gozzani.
+                Projetado pelos renomados arquitetos brasileiros Isay Weinfeld e Marcio Kogan, o restaurante Fasano
+                recebe seus clientes em um ambiente elegante com serviço irretocável. A adega, comandada pelo sommelier
+                Manoel Beato, apresenta uma variedade de Châteaux, Barolos e Brunellos coletados durante viagens pelas
+                regiões vinícolas da Itália e França.. </p>
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <div>
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.108488656471!2d-46.671740048555165!3d-23.564546784605977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59d5ef7498d7%3A0x3c731a4fb1094deb!2sRestaurante%20Fasano!5e0!3m2!1spt-BR!2sbr!4v1623266750669!5m2!1spt-BR!2sbr"
+                        allowfullscreen="" loading="lazy" class="img-fluid mapa mt-3"></iframe>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="info-rest">
+                      <div class="mt-2">
+                        <img src="./img/icons/clock.svg" alt="imagem de um relógio">
+                        <span>Horário de funcionamento: 12:00-15:00 & 18:00–21:00h</span>
+                      </div>
+                      <div>
+                        <img src="./img/icons/menu.svg" alt="imagem de um chapéu de chef de cozinha">
+                        <span>Cardápio: <a class="text-decoration-none text-dark"
+                            href="https://www.fasano.com.br/gastronomia/delivery-fasano" target="_blank">Clique para ver
+                            o Menu</a>
+                        </span>
+                      </div>
+                      <div>
+                        <img src="./img/icons/telefone.svg" alt="imagem de um telefone">
+                        <span>Telefone: (11)3896-4000</span>
+                      </div>
+                      <div>
+                        <img src="./img/icons/pin.svg" alt="imagem de um pin de mapa">
+                        <span>Endereço: R. Vitório Fasano, 88 - Cerqueira César, São Paulo - SP, 01414-020</span>
+                      </div>
+                      <div>
+                        <img src="./img/icons/distance.svg" alt="imagem de dois pins num mapa">
+                        <span>Distância com relação a Av. Paulista é de 2.5km</span>
+                      </div>
+                      <div>
+                        <img src="./img/icons/money.svg" alt="imagem de uma carteira">
+                        <span>Indicador de preço: $$$$</span>
+                      </div>
+                      <div>
+                        <img src="./img/icons/estacionamento.svg" alt="simbolo de um estacionamento">
+                        <span>Possui estacionamento no local?: Sim</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex ps-3 mt-5 justify-content-center">
+                <a class="text-decoration-none text-dark subtitulo" href="http://fasano.com.br/" target="_blank">Site
+                  oficial</a>
+                <a href="http://fasano.com.br/" target="_blank"><img class="img-fluid ms-2 mb-5 arrow"
+                    src="./img/arrow.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="m-5 text-center">
+            <span class="text-peq text-dark">1870 Avaliações</span>
+            <div class="d-flex justify-content-center mt-2">
+              <a class="btn" data-bs-toggle="modal" data-bs-target="#form">
+                <img class="img-fluid star" src="./img/estrela.png" alt="">
+                <img class="img-fluid star" src="./img/estrela.png" alt="">
+                <img class="img-fluid star" src="./img/estrela.png" alt="">
+                <img class="img-fluid star" src="./img/estrela.png" alt="">
+                <img class="img-fluid star" src="./img/estrela.png" alt="">
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section>
-      <div class="card bg-transparent text-white group-card">
-        <img class="img-fluid cards card-img" src="./img/VidaNoturna/skybar.jpg" alt="...">
+      <div class="card bg-transparent text-white group-card reveal">
+        <a class="btn" data-bs-toggle="collapse" href="#collapseDom" role="button" aria-expanded="false"
+          aria-controls="collapseExample">
+          <img class="img-fluid cards card-img" src="./img/VidaNoturna/theWeek.jpg" alt="...">
+          <div class="card-img-overlay position-relative text-center">
+            <h1 class="card-title position-absolute bottom-0 start-50 translate-middle-x estabelecimentos text-white">
+              DOM</h1>
+          </div>
+        </a>
         <div class="white">
-          <div class="card-img-overlay">
-            <h1 class="card-title estabelecimentos text-center">Skye</h1>
-          </div>
           <div class="card-img-bottom">
-            <p class="card-title fs-5 text-center text-dark">The nice thing about beginning hiking is that you
-              don’t
-              really need any special gear, you can probably get away with things you already have.</p>
+            <p class="card-title fs-5 text-center text-dark legenda bg-white">O restaurante traz a alta gastronomia do
+              famoso chef Alex Atala, que reescreve pratos com ingredientes inovadores.</p>
           </div>
-          <div class="container text-dark">
-            <div class="d-flex mt-5 text-center ps-3">
-              <div class="travessao mt-2 "></div>
-              <h3 class="subtitulo ms-3">Hiking Essentials</h3>
+          <div class="collapse" id="collapseDom">
+            <div class="container text-dark">
+              <div class="d-flex mt-5 text-center ps-3">
+                <div class="travessao mt-2 "></div>
+                <h3 class="subtitulo ms-3">Melhores Restaurantes</h3>
+              </div>
+              <h2 class="titulo-descricao display-3 ps-3">Alta Gastronomia Brasileira</h2>
+              <p class="ps-3">Detentor de duas estrelas no prestigiado Guia Michelin, o D.O.M. é um restaurante
+                singular,sem pretensão de ser eloquente. Ao contrário, sua mensagem é sintática e pungente: sair da zona
+                de conforto e propor uma nova experiência gastronômica, resgatando os sabores mais autênticos da cozinha
+                brasileira sob um olhar contemporâneo. </p>
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <div>
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14628.23648943752!2d-46.66745!3d-23.56632!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x269955670d659e58!2sD.O.M.!5e0!3m2!1spt-BR!2sbr!4v1623272771112!5m2!1spt-BR!2sbr"
+                        allowfullscreen="" loading="lazy" class="img-fluid mapa mt-3"></iframe>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="info-rest">
+                      <div class="mt-2">
+                        <img src="./img/icons/clock.svg" alt="imagem de um relógio">
+                        <span>Horário de funcionamento: 12:00-15:00 & 19:00–21:00h</span>
+                      </div>
+                      <div>
+                        <img src="./img/icons/menu.svg" alt="imagem de um chapéu de chef de cozinha">
+                        <span>Cardápio: <a class="text-decoration-none text-dark"
+                            href="http://domrestaurante.com.br/pt-br/menu.html" target="_blank">Clique para ver
+                            o Menu</a>
+                        </span>
+                      </div>
+                      <div>
+                        <img src="./img/icons/telefone.svg" alt="imagem de um telefone">
+                        <span>Telefone: (11)96918-9947</span>
+                      </div>
+                      <div>
+                        <img src="./img/icons/pin.svg" alt="imagem de um pin de mapa">
+                        <span>Endereço: R. Barão de Capanema, 549 - Jardins, São Paulo - SP, 01411-011</span>
+                      </div>
+                      <div>
+                        <img src="./img/icons/distance.svg" alt="imagem de dois pins num mapa">
+                        <span>Distância com relação a Av. Paulista é de 2.5km</span>
+                      </div>
+                      <div>
+                        <img src="./img/icons/money.svg" alt="imagem de uma carteira">
+                        <span>Indicador de preço: $$$$</span>
+                      </div>
+                      <div>
+                        <img src="./img/icons/estacionamento.svg" alt="simbolo de um estacionamento">
+                        <span>Possui estacionamento no local?: Sim</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex ps-3 mt-5 justify-content-center">
+                <a class="text-decoration-none text-dark subtitulo" href="http://domrestaurante.com.br/"
+                  target="_blank">Site
+                  oficial</a>
+                <a href="http://domrestaurante.com.br/" target="_blank"><img class="img-fluid ms-2 mb-5 arrow"
+                    src="./img/arrow.svg" alt="desenho de uma seta"></a>
+              </div>
             </div>
-            <h2 class="titulo-descricao display-3 ps-3">Picking the right Hiking Gear!</h2>
-            <p class="ps-3">The nice thing about beginning hiking is that you don’t really need
-              any special gear, you can probably
-              get away with things you already have.
-              Let’s start with clothing. A typical mistake hiking beginners make is wearing jeans and regular clothes,
-              which will get heavy and chafe wif they get sweaty or wet.</p>
-            <div class="d-flex ps-3">
-              <a class="text-decoration-none text-dark subtitulo" href="./vidaNoturna.html">read more</a>
-              <img class="img-fluid ms-2 mb-5" src="./img/arrow.svg" alt="">
-            </div>
-            <div class="m-5 text-center">
-              <span class="text-peq">2397 Avaliações</span>
-              <div class="d-flex justify-content-center mt-2">
+          </div>
+          <div class="m-5 text-center">
+            <span class="text-peq text-dark">897 Avaliações</span>
+            <div class="d-flex justify-content-center mt-2">
+              <a class="btn" data-bs-toggle="modal" data-bs-target="#form">
                 <img class="img-fluid star" src="./img/estrela.png" alt="">
                 <img class="img-fluid star" src="./img/estrela.png" alt="">
                 <img class="img-fluid star" src="./img/estrela.png" alt="">
                 <img class="img-fluid star" src="./img/estrela.png" alt="">
                 <img class="img-fluid star" src="./img/meia estrela.png" alt="">
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -124,41 +367,96 @@
     </section>
 
     <section>
-      <div class="card bg-transparent text-white group-card">
-        <img class="img-fluid cards card-img" src="./img/VidaNoturna/dedge.jpg" alt="...">
+      <div class="card bg-transparent text-white group-card reveal">
+        <a class="btn" data-bs-toggle="collapse" href="#collapseFigueira" role="button" aria-expanded="false"
+          aria-controls="collapseExample">
+          <img class="img-fluid cards card-img" src="./img/VidaNoturna/Bar-Brahma.jpg" alt="...">
+          <div class="card-img-overlay position-relative text-center">
+            <h1 class="card-title position-absolute bottom-0 start-50 translate-middle-x estabelecimentos text-white">
+              Figueira Rubaiyat</h1>
+          </div>
+        </a>
         <div class="white">
-          <div class="card-img-overlay">
-            <h1 class="card-title estabelecimentos text-center">Skye</h1>
-          </div>
           <div class="card-img-bottom">
-            <p class="card-title fs-5 text-center text-dark">The nice thing about beginning hiking is that you
-              don’t
-              really need any special gear, you can probably get away with things you already have.</p>
+            <p class="card-title fs-5 text-center text-dark legenda bg-white">Restaurante elegante com terraço coberto,
+              que serve carnes grelhadas e frutos do mar sob uma árvore gigante.</p>
           </div>
-          <div class="container text-dark">
-            <div class="d-flex mt-5 text-center ps-3">
-              <div class="travessao mt-2 "></div>
-              <h3 class="subtitulo ms-3">Hiking Essentials</h3>
+          <div class="collapse" id="collapseFigueira">
+            <div class="container text-dark">
+              <div class="d-flex mt-5 text-center ps-3">
+                <div class="travessao mt-2 "></div>
+                <h3 class="subtitulo ms-3">Melhores Restaurantes</h3>
+              </div>
+              <h2 class="titulo-descricao display-3 ps-3">Especialista em Carnes e Grelhados</h2>
+              <p class="ps-3">Situado em um dos prédios mais icônicos e imponentes da cidade de São Paulo, o Terraço
+                Itália traz consigo um legado de história e tradição. Um protagonista na cena paulistana que surpreende
+                e encanta clientes e visitantes há mais de 50 anos. </p>
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <div>
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.088828948736!2d-46.67197668398679!3d-23.565252967623476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce583397637bdb%3A0xcc15b6cb26a775b5!2sA%20Figueira%20Rubaiyat!5e0!3m2!1spt-BR!2sbr!4v1623272385961!5m2!1spt-BR!2sbr"
+                        allowfullscreen="" loading="lazy" class="img-fluid mapa mt-3"></iframe>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="info-rest">
+                      <div class="mt-2">
+                        <img src="./img/icons/clock.svg" alt="imagem de um relógio">
+                        <span>Horário de funcionamento: 12:00–21:00</span>
+                      </div>
+                      <div>
+                        <img src="./img/icons/menu.svg" alt="imagem de um chapéu de chef de cozinha">
+                        <span>Cardápio: <a class="text-decoration-none text-dark"
+                            href="http://www.gruporubaiyat.com/nossospratos.asp?abt=43&lview=pt" target="_blank">Clique
+                            para ver
+                            o Menu</a>
+                        </span>
+                      </div>
+                      <div>
+                        <img src="./img/icons/telefone.svg" alt="imagem de um telefone">
+                        <span>Telefone: (11)3087-1399</span>
+                      </div>
+                      <div>
+                        <img src="./img/icons/pin.svg" alt="imagem de um pin de mapa">
+                        <span>Endereço: Rua Haddock Lobo, 1738 - Jardim Paulista, São Paulo - SP, 01415-000</span>
+                      </div>
+                      <div>
+                        <img src="./img/icons/distance.svg" alt="imagem de dois pins num mapa">
+                        <span>Distância com relação a Av. Paulista é de 2.4km</span>
+                      </div>
+                      <div>
+                        <img src="./img/icons/money.svg" alt="imagem de uma carteira">
+                        <span>Indicador de preço: $$$$</span>
+                      </div>
+                      <div>
+                        <img src="./img/icons/estacionamento.svg" alt="simbolo de um estacionamento">
+                        <span>Possui estacionamento no local?: Sim</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex ps-3 mt-5 justify-content-center">
+                <a class="text-decoration-none text-dark subtitulo" href="http://www.gruporubaiyat.com/"
+                  target="_blank">Site
+                  oficial</a>
+                <a href="http://www.gruporubaiyat.com/" target="_blank"><img class="img-fluid ms-2 mb-5 arrow"
+                    src="./img/arrow.svg" alt=""></a>
+              </div>
             </div>
-            <h2 class="titulo-descricao display-3 ps-3">Picking the right Hiking Gear!</h2>
-            <p class="ps-3">The nice thing about beginning hiking is that you don’t really need
-              any special gear, you can probably
-              get away with things you already have.
-              Let’s start with clothing. A typical mistake hiking beginners make is wearing jeans and regular clothes,
-              which will get heavy and chafe wif they get sweaty or wet.</p>
-            <div class="d-flex ps-3">
-              <a class="text-decoration-none text-dark subtitulo" href="./vidaNoturna.html">read more</a>
-              <img class="img-fluid ms-2 mb-5" src="./img/arrow.svg" alt="">
-            </div>
-            <div class="m-5 text-center">
-              <span class="text-peq">2397 Avaliações</span>
-              <div class="d-flex justify-content-center mt-2">
+          </div>
+          <div class="m-5 text-center">
+            <span class="text-peq text-dark">3460 Avaliações</span>
+            <div class="d-flex justify-content-center mt-2">
+              <a class="btn" data-bs-toggle="modal" data-bs-target="#form">
                 <img class="img-fluid star" src="./img/estrela.png" alt="">
                 <img class="img-fluid star" src="./img/estrela.png" alt="">
                 <img class="img-fluid star" src="./img/estrela.png" alt="">
                 <img class="img-fluid star" src="./img/estrela.png" alt="">
                 <img class="img-fluid star" src="./img/meia estrela.png" alt="">
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -166,63 +464,147 @@
     </section>
 
     <section>
-      <div class="card bg-transparent text-white group-card">
-        <img class="img-fluid cards card-img" src="./img/VidaNoturna/theWeek.jpg" alt="...">
+      <div class="card bg-transparent text-white group-card reveal">
+        <a class="btn" data-bs-toggle="collapse" href="#collapseCoco" role="button" aria-expanded="false"
+          aria-controls="collapseExample">
+          <img class="img-fluid cards card-img" src="./img/VidaNoturna/villaC.jpg" alt="...">
+          <div class="card-img-overlay position-relative text-center">
+            <h1 class="card-title position-absolute bottom-0 start-50 translate-middle-x estabelecimentos text-white">
+              Coco Bambu</h1>
+          </div>
+        </a>
         <div class="white">
-          <div class="card-img-overlay">
-            <h1 class="card-title estabelecimentos text-center">Skye</h1>
-          </div>
           <div class="card-img-bottom">
-            <p class="card-title fs-5 text-center text-dark">The nice thing about beginning hiking is that you
-              don’t
-              really need any special gear, you can probably get away with things you already have.</p>
+            <p class="card-title fs-5 text-center text-dark legenda bg-white">Restaurante com decoração rústica e
+              elegante, oferecendo aos clientes um ambiente sofisticado e aconchegante.</p>
           </div>
-          <div class="container text-dark">
-            <div class="d-flex mt-5 text-center ps-3">
-              <div class="travessao mt-2 "></div>
-              <h3 class="subtitulo ms-3">Hiking Essentials</h3>
-            </div>
-            <h2 class="titulo-descricao display-3 ps-3">Picking the right Hiking Gear!</h2>
-            <p class="ps-3">The nice thing about beginning hiking is that you don’t really need
-              any special gear, you can probably
-              get away with things you already have.
-              Let’s start with clothing. A typical mistake hiking beginners make is wearing jeans and regular clothes,
-              which will get heavy and chafe wif they get sweaty or wet.</p>
-            <div class="d-flex ps-3">
-              <a class="text-decoration-none text-dark subtitulo" href="./vidaNoturna.html">read more</a>
-              <img class="img-fluid ms-2 mb-5" src="./img/arrow.svg" alt="">
-            </div>
-            <div class="m-5 text-center">
-              <span class="text-peq">2397 Avaliações</span>
-              <div class="d-flex justify-content-center mt-2">
-                <img class="img-fluid star" src="./img/estrela.png" alt="">
-                <img class="img-fluid star" src="./img/estrela.png" alt="">
-                <img class="img-fluid star" src="./img/estrela.png" alt="">
-                <img class="img-fluid star" src="./img/estrela.png" alt="">
-                <img class="img-fluid star" src="./img/meia estrela.png" alt="">
+          <div class="collapse" id="collapseCoco">
+            <div class="container text-dark">
+              <div class="d-flex mt-5 text-center ps-3">
+                <div class="travessao mt-2 "></div>
+                <h3 class="subtitulo ms-3">Melhores Restaurantes</h3>
               </div>
+              <h2 class="titulo-descricao display-3 ps-3">Especialista em Frutos do Mar</h2>
+              <p class="ps-3">Considerado o maior e melhor restaurante do Brasil, com especialidade em frutos do mar, o
+                Coco Bambu possui um amplo e variado cardápio, com comidas e bebidas deliciosamente diferenciadas,
+                feitas com ingredientes frescos da mais alta qualidade. </p>
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <div>
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.9440771449963!2d-46.645806084144866!3d-23.570451884678423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce590b00e5e5c9%3A0x4ba881d69ed61622!2sCoco%20Bambu%20Conceito%20P%C3%A1tio%20Paulista!5e0!3m2!1spt-BR!2sbr!4v1623271655951!5m2!1spt-BR!2sbr"
+                        allowfullscreen="" loading="lazy" class="img-fluid mapa mt-3"></iframe>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="info-rest">
+                      <div class="mt-2">
+                        <img src="./img/icons/clock.svg" alt="imagem de um relógio">
+                        <span>Horário de funcionamento: 11:00-21:00h</span>
+                      </div>
+                      <div>
+                        <img src="./img/icons/menu.svg" alt="imagem de um chapéu de chef de cozinha">
+                        <span>Cardápio: <a class="text-decoration-none text-dark"
+                            href="https://cocobambu.com/cardapio1/" target="_blank">Clique para ver
+                            o Menu</a>
+                        </span>
+                      </div>
+                      <div>
+                        <img src="./img/icons/telefone.svg" alt="imagem de um telefone">
+                        <span>Telefone: (11)3266-7121</span>
+                      </div>
+                      <div>
+                        <img src="./img/icons/pin.svg" alt="imagem de um pin de mapa">
+                        <span>Endereço: R. Treze de Maio, 1933 - Bela Vista, São Paulo - SP, 01327-001</span>
+                      </div>
+                      <div>
+                        <img src="./img/icons/distance.svg" alt="imagem de dois pins num mapa">
+                        <span>Distância com relação a Av. Paulista é de 4km</span>
+                      </div>
+                      <div>
+                        <img src="./img/icons/money.svg" alt="imagem de uma carteira">
+                        <span>Indicador de preço: $$$</span>
+                      </div>
+                      <div>
+                        <img src="./img/icons/estacionamento.svg" alt="simbolo de um estacionamento">
+                        <span>Possui estacionamento no local?: Sim</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex ps-3 mt-5 justify-content-center">
+                <a class="text-decoration-none text-dark subtitulo" href="https://cocobambu.com/" target="_blank">Site
+                  oficial</a>
+                <a href="https://cocobambu.com/" target="_blank"><img class="img-fluid ms-2 mb-5 arrow"
+                    src="./img/arrow.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="m-5 text-center">
+            <span class="text-peq text-dark">7215 Avaliações</span>
+            <div class="d-flex justify-content-center mt-2">
+              <a class="btn" data-bs-toggle="modal" data-bs-target="#form">
+                <img class="img-fluid star" src="./img/estrela.png" alt="">
+                <img class="img-fluid star" src="./img/estrela.png" alt="">
+                <img class="img-fluid star" src="./img/estrela.png" alt="">
+                <img class="img-fluid star" src="./img/estrela.png" alt="">
+                <img class="img-fluid star" src="./img/sem estrela.png" alt="">
+              </a>
             </div>
           </div>
         </div>
       </div>
+    </section>
   </main>
 
+  <div class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <form action="#">
+          <div class="mt-2">
+            <a class="btn-close btn-close-white cross" data-bs-dismiss="modal" aria-label="Close">
+            </a>
+          </div>
+          <div class="card-body text-center img-fluid">
+            <img class="mb-3" src="./img/icons/rating.svg">
+            <h3>Dê seu feedback</h3>
+            <div class="comment-box">
+              <div class="rating m-2"> <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label> <input type="radio"
+                  name="rating" value="3" id="3"><label for="3">☆</label> <input type="radio" name="rating" value="2"
+                  id="2"><label for="2">☆</label> <input type="radio" name="rating" value="1" id="1"><label
+                  for="1">☆</label>
+              </div>
+              <div class="comment-area"> <textarea class="form-control" placeholder="Qual a sua opinião?" rows="4"
+                  required></textarea> </div>
+              <div class="text-center mt-4"> <button class="btn send px-5">Enviar<i
+                    class="fa fa-long-arrow-right ml-1"></i></button> </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
   <footer>
-    <div class="container mt-5">
+    <div class="container mt-5 footer-align">
       <div class="row">
         <div class="col">
           <div class="ms-5">
-            <h3 class="logo">Traveller</h3>
-            <p>Get out there & discover your next slope, mountain & destination!</p>
+            <a href="./index.html" class="text-decoration-none">
+              <h3 class="logo-footer text-white">Traveller</h3>
+            </a>
+            <p class="text-center">Get out there & discover your next slope, mountain & destination!</p>
           </div>
         </div>
         <div class="col"></div>
         <div class="col">
           <div class="ms-5">
             <h4>Informações Úteis</h4>
-            <ul class="">
+            <ul class="list-unstyled footer-links">
               <li><a href="#">Sobre nós</a></li>
-              <li><a href="#">Equipe</a></li>
               <li><a href="#">Equipe</a></li>
               <li><a href="#">Trabalhe Conosco</a></li>
               <li><a href="#">Contato</a></li>
@@ -235,10 +617,11 @@
       <p>Copyright 2021 TRAVELLER, Inc. Termos & Privacidade</p>
     </div>
   </footer>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
     crossorigin="anonymous"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
