@@ -15,7 +15,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background: #F3CE5E;
+    background: #252525;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -317,6 +317,12 @@ body::-webkit-scrollbar-thumb {
 
 .group-card {
     border: none;
+}
+
+.mapa-vida {
+    min-width: 470px;
+    min-height: 315px;
+    border-radius: 5px;
 }
 
 /*Gastronomia*/
