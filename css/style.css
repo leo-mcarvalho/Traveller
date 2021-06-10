@@ -31,6 +31,10 @@ body::-webkit-scrollbar-thumb {
     width: auto;
 }
 
+.cover {
+    margin-bottom: 400px;
+}
+
 .conteudo {
     height: 100vh;
 }
@@ -91,7 +95,7 @@ body::-webkit-scrollbar-thumb {
 @media (min-width: 1200px) {
     .titulo {
         font-size: 10rem;
-        line-height: 129px;
+        line-height: 150px;
     }
 }
 
@@ -229,6 +233,13 @@ body::-webkit-scrollbar-thumb {
 
 }
 
+.travessao-branco {
+    width: 72px;
+    height: 2px;
+    background: #ffffff;
+
+}
+
 .amarelo {
     background-color: #FBD784;
 }
@@ -252,6 +263,8 @@ body::-webkit-scrollbar-thumb {
     transform: translateY(0px);
     opacity: 1;
 }
+
+.h-pic {}
 
 /*vida-noturna*/
 .content-vida-noturna {
