@@ -49,7 +49,6 @@ window.addEventListener("resize", function () {
     if (w < 992) {
       element.classList.add("collapse");
       element.classList.add("navbar-collapse");
-      console.log("desktop Remove");
     } else {
       element.classList.remove("collapse");
       element.classList.remove("navbar-collapse");
